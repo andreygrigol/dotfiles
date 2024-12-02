@@ -6,7 +6,6 @@
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.lsp.neoconf",
     "lazyvim.plugins.extras.lsp.none-ls"
