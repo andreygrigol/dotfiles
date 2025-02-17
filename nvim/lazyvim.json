@@ -1,17 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.dap.core",
-    "lazyvim.plugins.extras.dap.nlua",
-    "lazyvim.plugins.extras.formatting.black",
-    "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.lang.clangd",
-    "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.lsp.neoconf",
-    "lazyvim.plugins.extras.lsp.none-ls"
+
   ],
+  "install_version": 8,
   "news": {
-    "NEWS.md": "7429"
+    "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
