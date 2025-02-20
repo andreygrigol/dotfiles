@@ -10,7 +10,6 @@ alias vi='nvim'
 
 if status is-interactive
     set -g fish_greeting
-    fastfetch
     # Commands to run in interactive sessions can go here
 end
 
