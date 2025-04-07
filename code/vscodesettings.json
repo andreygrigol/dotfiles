@@ -1,134 +1,276 @@
 {
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    
-    "vim.normalModeKeyBindings": [
-        {
-        "before": ["<Ctrl+b>"],
-        "commands": ["workbench.view.explorer"]
-        },
-        {
-        "before": ["<Ctrl+p>"],
-        "commands": ["workbench.action.quickOpen"]
-        },
-        {
-        "before": ["<Ctrl+h>"],
-        "after": ["<Ctrl+w>", "h"]
-        },
-        {
-        "before": ["<Ctrl+j>"],
-        "after": ["<Ctrl+w>", "j"]
-        },
-        {
-        "before": ["<Ctrl+k>"],
-        "after": ["<Ctrl+w>", "k"]
-        },
-        {
-        "before": ["<Ctrl+l>"],
-        "after": ["<Ctrl+w>", "l"]
-        },
-        {
-        "before": ["<leader>", "t", "h"],
-        "commands": ["workbench.action.selectTheme"]
-        },
-        {
-        "before": ["<leader>", "f", "v"],
-        "commands": ["actions.find"]
-        },
-        {
-        "before": ["<Shift+l>"],
-        "commands": ["workbench.action.nextEditor"]
-        },
-        {
-        "before": ["<Shift+h>"],
-        "commands": ["workbench.action.previousEditor"]
-        },
-        {
-        "before": ["<leader>", "r", "n"],
-        "commands": ["editor.action.rename"]
-        },
-        {
-        "before": ["g", "D"],
-        "commands": ["editor.action.revealDeclaration"]
-        },
-        {
-        "before": ["g", "d"],
-        "commands": ["editor.action.goToReferences"]
-        },
-        {
-        "before": ["<leader>", "f", "n"],
-        "commands": ["welcome.showNewFileEntries"]
-        },
-        {
-        "before": ["<leader>", "t"],
-        "commands": ["workbench.action.terminal.openNativeConsole"]
-        },
-        {
-        "before": ["<leader>", "i", "t"],
-        "commands": ["workbench.action.terminal.new"]
-        },
-        {
-        "before": ["<leader>", "f", "f"],
-        "commands": ["workbench.action.findInFiles"]
-        },
-        {
-        "before": ["<leader>", "h", "a"],
-        "commands": ["workbench.action.activityBarLocation.hide"]
-        },
-        {
-        "before": ["<leader>", "s", "a"],
-        "commands": ["workbench.action.focusActivityBar"]
-        },
-        {
-        "before": ["<leader>", "x", "x"],
-        "commands": ["workbench.action.closeActiveEditor"]
-        },
-        {
-        "before": ["<leader>", "a", "x"],
-        "commands": ["workbench.action.closeEditorsInGroup"]
-        },
-        {
-        "before": ["<leader>", "d"],
-        "commands": ["editor.action.addSelectionToNextFindMatch"]
-        },
-        {
-        "before": ["<leader>", "|"],
-        "commands": ["workbench.action.splitEditorToRightGroup"]
-        },
-        {
-        "before": ["<leader>", "-"],
-        "commands": ["workbench.action.splitEditorDown"]
-        },
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-        "before": ["<Ctrl+a>"],
-        "commands": ["editor.action.selectAll"]
-        },
-        {
-        "before": ["<Alt+k>"],
-        "commands": ["editor.action.copyLinesUpAction"]
-        },
-        {
-        "before": ["<Alt+j>"],
-        "commands": ["editor.action.copyLinesDownAction"]
-        }
-    ],
-
-    "editor.fontLigatures": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "explorer.confirmDelete": false,
-    "editor.fontSize": 14,
-    "editor.lineNumbers": "relative",
-    "extensions.ignoreRecommendations": true,
-    "git.autofetch": true,
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "gruvboxMaterial.darkContrast": "soft",
-    "gruvboxMaterial.darkPalette": "original",
-    "editor.fontFamily": "FantasqueSansM Nerd Font",
-    "workbench.iconTheme": "vscode-icons"                                                                        
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<Ctrl+b>"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
+        "<Ctrl+p>"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<Ctrl+h>"
+      ],
+      "after": [
+        "<Ctrl+w>",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<Ctrl+j>"
+      ],
+      "after": [
+        "<Ctrl+w>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<Ctrl+k>"
+      ],
+      "after": [
+        "<Ctrl+w>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<Ctrl+l>"
+      ],
+      "after": [
+        "<Ctrl+w>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.selectTheme"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "v"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+    {
+      "before": [
+        "<Shift+l>"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<Shift+h>"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        "editor.action.revealDeclaration"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "n"
+      ],
+      "commands": [
+        "welcome.showNewFileEntries"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.openNativeConsole"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.new"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "h",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.activityBarLocation.hide"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.focusActivityBar"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsInGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "editor.action.addSelectionToNextFindMatch"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "|"
+      ],
+      "commands": [
+        "workbench.action.splitEditorToRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "-"
+      ],
+      "commands": [
+        "workbench.action.splitEditorDown"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<Ctrl+a>"
+      ],
+      "commands": [
+        "editor.action.selectAll"
+      ]
+    },
+    {
+      "before": [
+        "<Alt+k>"
+      ],
+      "commands": [
+        "editor.action.copyLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "<Alt+j>"
+      ],
+      "commands": [
+        "editor.action.copyLinesDownAction"
+      ]
+    }
+  ],
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FantasqueSansM Nerd Font",
+  "workbench.iconTheme": "vscode-icons",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "explorer.confirmDelete": false,
+  "editor.lineNumbers": "relative",
+  "extensions.ignoreRecommendations": true,
+  "git.autofetch": true,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Gruvbox Dark Soft",
+  "window.titleBarStyle": "native",
+  "godotTools.lsp.serverPort": 6006,
+  "editor.fontSize": 15,
+  "code-runner.runInTerminal": true,
+  "editor.suggest.showReferences": false,
+  "dotnet.symbolSearch.searchReferenceAssemblies": false,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "vsicons.dontShowNewVersionMessage": true
 }
