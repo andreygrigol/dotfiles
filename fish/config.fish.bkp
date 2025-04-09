@@ -1,6 +1,7 @@
-alias grep="grep --color=auto"
-alias egrep="egrep --color=auto"
-alias fgrep="fgrep --color=auto"
+alias vi="nvim"
+alias ls="ls --color=auto"
+alias ll="ls -l --color=auto"
+alias la="ls -la --color=auto"
 
 if status is-interactive
     set -g fish_greeting
