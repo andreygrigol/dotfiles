@@ -8,6 +8,7 @@ return {
     vim.g.gruvbox_material_foreground = "original"
     vim.g.gruvbox_material_background = "soft"
     vim.g.gruvbox_material_enable_italic = true
-    vim.cmd.colorscheme("gruvbox-material")
+    vim.g.gruvbox_material_enable_bold = 1
+    -- vim.cmd.colorscheme("gruvbox-material")
   end,
 }
