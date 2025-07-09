@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dconf load /org/gnome/shell/extensions <./gnome-settings.txt
+dconf load /org/gnome/shell/extensions <./extensions.txt
