@@ -2,8 +2,16 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Shift+K para mover linha para cima
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move linha para cima" })
+local opts = { noremap = true, silent = true }
 
--- Shift+J para mover linha para baixo
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move linha para baixo" })
+-- Mapeia Ctrl+A para ir ao início da linha (usando ^)
+vim.api.nvim_set_keymap("n", "<C-a>", "^", opts)
+
+-- Mapeia Ctrl+E para ir ao fim da linha (usando $)
+vim.api.nvim_set_keymap("n", "<C-e>", "$", opts)
+
+-- Mover linha(s) selecionadas para baixo com Ctrl+J
+vim.api.nvim_set_keymap("x", "<C-j>", ":move '>+1<CR>gv=gv", opts)
+
+-- Mover linha(s) selecionadas para cima com Ctrl+K
+vim.api.nvim_set_keymap("x", "<C-k>", ":move '<-2<CR>gv=gv", opts)
