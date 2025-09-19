@@ -5,6 +5,13 @@ settings-version=2
 brightness=0.59999999999999998
 sigma=30
 
+[blur-my-shell/applications]
+blur=true
+dynamic-opacity=false
+opacity=210
+sigma=30
+whitelist=['kitty']
+
 [blur-my-shell/coverflow-alt-tab]
 pipeline='pipeline_default'
 
@@ -24,8 +31,9 @@ pipeline='pipeline_default'
 
 [blur-my-shell/panel]
 brightness=0.59999999999999998
-pipeline='pipeline_default'
+pipeline='pipeline_default_rounded'
 sigma=30
+static-blur=true
 
 [blur-my-shell/screenshot]
 pipeline='pipeline_default'
@@ -36,32 +44,38 @@ sigma=30
 
 [dash-to-dock]
 background-opacity=0.80000000000000004
-dash-max-icon-size=44
+dash-max-icon-size=50
 dock-position='BOTTOM'
 height-fraction=0.90000000000000002
 hot-keys=false
+icon-size-fixed=false
 preferred-monitor=-2
 preferred-monitor-by-connector='DP-0'
-show-apps-always-in-the-edge=false
+preview-size-scale=0.0
 show-mounts=false
 show-show-apps-button=false
 show-trash=false
 
-[just-perfection]
-animation=2
-support-notifier-showed-version=34
-
 [lockscreen-extension]
-blur-radius-1=32
+blur-brightness-1=0.59999999999999998
+blur-radius-1=50
 
 [space-bar/appearance]
 application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
 
+[space-bar/shortcuts]
+back-and-forth=true
+enable-activate-workspace-shortcuts=true
+enable-move-to-workspace-shortcuts=true
+
 [space-bar/state]
 version=33
 
-[tactile]
-show-tiles=['<Super>q']
+[tilingshell]
+last-version-name-installed='16.4'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
+overridden-settings="{\"org.gnome.mutter.keybindings\":{\"toggle-tiled-right\":\"['<Super>Right']\",\"toggle-tiled-left\":\"['<Super>Left']\"},\"org.gnome.desktop.wm.keybindings\":{\"maximize\":\"['<Super>Up']\",\"unmaximize\":\"['<Super>Down', '<Alt>F5']\"},\"org.gnome.mutter\":{\"edge-tiling\":\"true\"}}"
+selected-layouts=[['Layout 1'], ['Layout 1']]
 
 [user-theme]
 name='Gruvbox-Orange-Dark-Soft'
