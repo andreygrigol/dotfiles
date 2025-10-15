@@ -253,7 +253,7 @@
     }
   ],
   "editor.fontLigatures": true,
-  "editor.fontFamily": "FantasqueSansM Nerd Font",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
   "workbench.iconTheme": "vscode-icons",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.minimap.enabled": false,
@@ -264,13 +264,10 @@
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Gruvbox Dark Soft",
-  "window.titleBarStyle": "native",
-  "godotTools.lsp.serverPort": 6006,
-  "editor.fontSize": 15,
-  "code-runner.runInTerminal": true,
+  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "window.titleBarStyle": "custom",
+  "editor.fontSize": 13,
   "editor.suggest.showReferences": false,
-  "dotnet.symbolSearch.searchReferenceAssemblies": false,
-  "dotnet.codeLens.enableReferencesCodeLens": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "gruvboxMaterial.darkContrast": "soft",
+  "gruvboxMaterial.darkPalette": "original",
 }
