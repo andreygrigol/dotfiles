@@ -1,15 +1,19 @@
+[alphabetical-app-grid]
+folder-order-position='end'
+
 [blur-my-shell]
 settings-version=2
 
 [blur-my-shell/appfolder]
+blur=false
 brightness=0.59999999999999998
 sigma=30
 
 [blur-my-shell/applications]
-blur=true
+blur=false
 dynamic-opacity=false
-opacity=210
-sigma=30
+opacity=190
+sigma=5
 whitelist=['kitty']
 
 [blur-my-shell/coverflow-alt-tab]
@@ -24,58 +28,83 @@ static-blur=true
 style-dash-to-dock=0
 
 [blur-my-shell/lockscreen]
+blur=false
 pipeline='pipeline_default'
 
 [blur-my-shell/overview]
+blur=true
 pipeline='pipeline_default'
 
 [blur-my-shell/panel]
+blur=true
 brightness=0.59999999999999998
-pipeline='pipeline_default_rounded'
+pipeline='pipeline_default'
 sigma=30
-static-blur=true
 
 [blur-my-shell/screenshot]
+blur=false
 pipeline='pipeline_default'
 
 [blur-my-shell/window-list]
+blur=false
 brightness=0.59999999999999998
 sigma=30
 
 [dash-to-dock]
 background-opacity=0.80000000000000004
-dash-max-icon-size=50
-dock-position='BOTTOM'
+dash-max-icon-size=48
+dock-position='LEFT'
 height-fraction=0.90000000000000002
 hot-keys=false
-icon-size-fixed=false
 preferred-monitor=-2
-preferred-monitor-by-connector='DP-0'
-preview-size-scale=0.0
-show-mounts=false
-show-show-apps-button=false
-show-trash=false
+preferred-monitor-by-connector='primary'
+
+[ding]
+check-x11wayland=true
+
+[just-perfection]
+animation=2
+dash-app-running=true
+workspace=true
+workspace-popup=false
 
 [lockscreen-extension]
-blur-brightness-1=0.59999999999999998
-blur-radius-1=50
+blur-radius-1=40
 
 [space-bar/appearance]
 application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
 
+[space-bar/behavior]
+smart-workspace-names=false
+
 [space-bar/shortcuts]
-back-and-forth=true
-enable-activate-workspace-shortcuts=true
+enable-activate-workspace-shortcuts=false
 enable-move-to-workspace-shortcuts=true
+open-menu=@as []
 
 [space-bar/state]
-version=33
+version=34
 
-[tilingshell]
-last-version-name-installed='16.4'
-layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
-overridden-settings="{\"org.gnome.mutter.keybindings\":{\"toggle-tiled-right\":\"['<Super>Right']\",\"toggle-tiled-left\":\"['<Super>Left']\"},\"org.gnome.desktop.wm.keybindings\":{\"maximize\":\"['<Super>Up']\",\"unmaximize\":\"['<Super>Down', '<Alt>F5']\"},\"org.gnome.mutter\":{\"edge-tiling\":\"true\"}}"
-selected-layouts=[['Layout 1'], ['Layout 1']]
+[tactile]
+col-0=1
+col-1=2
+col-2=1
+col-3=0
+gap-size=32
+row-0=1
+row-1=1
 
-[user-theme]
-name='Gruvbox-Orange-Dark-Soft'
+[tiling-assistant]
+focus-hint-color='rgb(203,67,20)'
+last-version-installed=51
+tiling-popup-all-workspace=true
+
+[tophat]
+meter-fg-color='#78ab50'
+mount-to-monitor='/'
+network-usage-unit='bits'
+show-cpu=false
+show-disk=false
+show-fs=false
+show-icons=false
+show-mem=false
