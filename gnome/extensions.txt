@@ -2,6 +2,7 @@
 folder-order-position='end'
 
 [blur-my-shell]
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}, 'pipeline_09235827297049': {'name': <'New pipeline'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_81186299726624'>, 'params': <@a{sv} {}>}>]>}}
 settings-version=2
 
 [blur-my-shell/appfolder]
@@ -10,17 +11,19 @@ brightness=0.59999999999999998
 sigma=30
 
 [blur-my-shell/applications]
-blur=false
+blur=true
+blur-on-overview=false
+brightness=1.0
 dynamic-opacity=false
-opacity=190
-sigma=5
-whitelist=['kitty']
+opacity=210
+sigma=20
+whitelist=['Code']
 
 [blur-my-shell/coverflow-alt-tab]
 pipeline='pipeline_default'
 
 [blur-my-shell/dash-to-dock]
-blur=true
+blur=false
 brightness=0.59999999999999998
 pipeline='pipeline_default_rounded'
 sigma=30
@@ -36,10 +39,14 @@ blur=true
 pipeline='pipeline_default'
 
 [blur-my-shell/panel]
-blur=true
+blur=false
 brightness=0.59999999999999998
+force-light-text=false
+override-background=true
 pipeline='pipeline_default'
 sigma=30
+static-blur=true
+unblur-in-overview=true
 
 [blur-my-shell/screenshot]
 blur=false
@@ -59,17 +66,185 @@ hot-keys=false
 preferred-monitor=-2
 preferred-monitor-by-connector='primary'
 
+[dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+dot-position='BOTTOM'
+extension-version=72
+hotkeys-overlay-combo='TEMPORARILY'
+panel-anchors='{"LEN-U3W0T8Y5":"MIDDLE"}'
+panel-element-positions='{"LEN-U3W0T8Y5":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-lengths='{"LEN-U3W0T8Y5":100}'
+panel-positions='{}'
+panel-sizes='{"LEN-U3W0T8Y5":26}'
+prefs-opened=false
+window-preview-title-position='TOP'
+
 [ding]
 check-x11wayland=true
 
 [just-perfection]
+accent-color-icon=false
 animation=2
 dash-app-running=true
+dash-icon-size=0
+invert-calendar-column-items=false
+panel-button-padding-size=0
+panel-icon-size=0
+panel-size=0
 workspace=true
 workspace-popup=false
 
 [lockscreen-extension]
 blur-radius-1=40
+
+[mediacontrols]
+colored-player-icon=true
+extension-position='Right'
+show-control-icons=false
+show-label=false
+
+[openbar]
+accent-color=['0.902', '0.380', '0.000']
+accent-override=false
+apply-menu-notif=true
+auto-bgalpha=true
+autofg-bar=true
+autofg-menu=true
+autohg-bar=true
+autohg-menu=true
+autotheme-dark='Dark'
+autotheme-font=false
+autotheme-refresh=true
+bartype='Islands'
+bcolor=['0.820', '0.686', '0.482']
+bg-change=true
+bgalpha=0.0
+bgalpha-wmax=1.0
+bgcolor=['0.184', '0.267', '0.196']
+bgcolor-wmax=['0.118', '0.118', '0.118']
+bgcolor2=['0.286', '0.243', '0.180']
+bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
+border-wmax=true
+bottom-margin=6.5
+boxalpha=0.0
+boxcolor=['0.184', '0.267', '0.196']
+bwidth=1.0
+count1=302590
+count10=3
+count11=1
+count12=1
+count2=249775
+count3=115758
+count4=85717
+count5=13971
+count6=10821
+count7=9899
+count8=5150
+count9=1314
+cust-margin-wmax=true
+dark-accent-color=['0.902', '0.380', '0.000']
+dark-bcolor=['0.820', '0.686', '0.482']
+dark-bgcolor=['0.184', '0.267', '0.196']
+dark-bgcolor-wmax=['0.118', '0.118', '0.118']
+dark-bgcolor2=['0.286', '0.243', '0.180']
+dark-bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
+dark-boxcolor=['0.184', '0.267', '0.196']
+dark-hcolor=['0.698', '0.745', '0.573']
+dark-hscd-color=['0.573', '0.824', '0.824']
+dark-iscolor=['0.184', '0.267', '0.196']
+dark-mbcolor=['0.698', '0.745', '0.573']
+dark-mbgcolor=['0.192', '0.204', '0.133']
+dark-mhcolor=['0.698', '0.745', '0.573']
+dark-mscolor=['0.573', '0.824', '0.824']
+dark-mshcolor=['0.000', '0.000', '0.000']
+dark-palette1=['115', '120', '83']
+dark-palette10=['121', '156', '180']
+dark-palette11=['68', '156', '92']
+dark-palette12=['132', '156', '180']
+dark-palette2=['193', '208', '208']
+dark-palette3=['56', '80', '59']
+dark-palette4=['172', '144', '104']
+dark-palette5=['158', '166', '148']
+dark-palette6=['202', '174', '131']
+dark-palette7=['87', '72', '59']
+dark-palette8=['178', '190', '146']
+dark-palette9=['99', '105', '43']
+dark-shcolor=['0.000', '0.000', '0.000']
+dark-smbgcolor=['0.286', '0.243', '0.180']
+dark-vw-color=['0.573', '0.824', '0.824']
+dark-winbcolor=['0.573', '0.824', '0.824']
+default-font='Sans 12'
+fgalpha=1.0
+hcolor=['0.698', '0.745', '0.573']
+hscd-color=['0.573', '0.824', '0.824']
+import-export=false
+isalpha=0.94999999999999996
+iscolor=['0.184', '0.267', '0.196']
+light-bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
+light-palette1=['115', '120', '83']
+light-palette10=['121', '156', '180']
+light-palette11=['68', '156', '92']
+light-palette12=['132', '156', '180']
+light-palette2=['193', '208', '208']
+light-palette3=['56', '80', '59']
+light-palette4=['172', '144', '104']
+light-palette5=['158', '166', '148']
+light-palette6=['202', '174', '131']
+light-palette7=['87', '72', '59']
+light-palette8=['178', '190', '146']
+light-palette9=['99', '105', '43']
+margin-wmax=2.5
+mbcolor=['0.698', '0.745', '0.573']
+mbgcolor=['0.192', '0.204', '0.133']
+menustyle=true
+mfgalpha=1.0
+mhcolor=['0.698', '0.745', '0.573']
+monitor-height=1080
+monitor-width=1920
+mscolor=['0.573', '0.824', '0.824']
+mshcolor=['0.000', '0.000', '0.000']
+neon=false
+neon-wmax=false
+palette1=['115', '120', '83']
+palette10=['121', '156', '180']
+palette11=['68', '156', '92']
+palette12=['132', '156', '180']
+palette2=['193', '208', '208']
+palette3=['56', '80', '59']
+palette4=['172', '144', '104']
+palette5=['158', '166', '148']
+palette6=['202', '174', '131']
+palette7=['87', '72', '59']
+palette8=['178', '190', '146']
+palette9=['99', '105', '43']
+pause-reload=false
+position='Top'
+radius-bottomleft=true
+radius-bottomright=true
+radius-topleft=true
+radius-topright=true
+reloadstyle=false
+set-bottom-margin=true
+set-fullscreen=true
+set-notif-position=true
+set-overview=false
+shcolor=['0.000', '0.000', '0.000']
+smbgcolor=['0.286', '0.243', '0.180']
+smbgoverride=false
+trigger-autotheme=false
+trigger-reload=true
+vw-color=['0.573', '0.824', '0.824']
+width-bottom=true
+width-left=true
+width-right=true
+width-top=true
+winbcolor=['0.573', '0.824', '0.824']
+wmax-hbarhint=true
+wmaxbar=false
+
+[rounded-window-corners-reborn]
+global-rounded-corner-settings={'padding': <{'left': uint32 1, 'right': 1, 'top': 1, 'bottom': 1}>, 'keepRoundedCorners': <{'maximized': false, 'fullscreen': false}>, 'borderRadius': <uint32 6>, 'smoothing': <0.0>, 'borderColor': <(0.5, 0.5, 0.5, 1.0)>, 'enabled': <true>}
+settings-version=uint32 7
 
 [space-bar/appearance]
 application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
@@ -108,3 +283,6 @@ show-disk=false
 show-fs=false
 show-icons=false
 show-mem=false
+
+[user-theme]
+name='Gruvbox-Orange-Dark-Soft'
