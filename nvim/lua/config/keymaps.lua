@@ -15,7 +15,3 @@ vim.api.nvim_set_keymap("x", "<C-j>", ":move '>+1<CR>gv=gv", opts)
 
 -- Mover linha(s) selecionadas para cima com Ctrl+K
 vim.api.nvim_set_keymap("x", "<C-k>", ":move '<-2<CR>gv=gv", opts)
-
-vim.api.nvim_set_keymap("n", "<C-t>", ":ObsidianToggleCheckbox<CR>", opts)
-
-vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianToday<CR>", { desc = "Abrir nota do dia" })
