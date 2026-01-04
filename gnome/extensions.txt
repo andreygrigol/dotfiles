@@ -11,7 +11,7 @@ brightness=0.59999999999999998
 sigma=30
 
 [blur-my-shell/applications]
-blur=true
+blur=false
 blur-on-overview=false
 brightness=1.0
 dynamic-opacity=false
