@@ -6,5 +6,5 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = false
 vim.o.smartindent = true
 vim.o.autoindent = true
-vim.o.colorcolumn = "80"
+vim.o.colorcolumn = "100"
 vim.g.NERDTreeShowHidden = 1

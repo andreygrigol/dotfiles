@@ -28,7 +28,7 @@ hide_window_decorations		yes
 
 
 # BEGIN_KITTY_FONTS
-font_family      family='RobotoMono Nerd Font' postscript_name=RobotoMonoNF-Rg
+font_family      family="RobotoMono Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
