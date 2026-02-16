@@ -280,7 +280,7 @@
     },
     "workbench.layoutControl.enabled": false,
     "window.menuBarVisibility": "hidden",
-    "workbench.activityBar.location": "top",
+    "workbench.activityBar.location": "hidden",
     "editor.fontSize": 13,
     "breadcrumbs.enabled": false,
     "window.customTitleBarVisibility": "never",
@@ -291,5 +291,8 @@
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
     "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.editor.enablePreview": false,
+    "git.blame.statusBarItem.enabled": false,
+    "workbench.statusBar.visible": false
 }
