@@ -1,29 +1,31 @@
-[alphabetical-app-grid]
-folder-order-position='end'
+[arcmenu]
+menu-button-icon='/home/andrey/Downloads/LOGO/03_Lux_grafismo_branco.png'
+menu-button-icon-size=24
+menu-layout='Default'
+override-menu-theme=false
+pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Nautilus.desktop'}, {'id': 'kitty.desktop'}, {'id': 'chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop'}, {'id': 'chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop'}, {'id': 'discord.desktop'}, {'id': 'obsidian.desktop'}, {'id': 'onlyoffice-desktopeditors.desktop'}]
+prefs-visible-page=0
+recently-installed-apps=['dbeaver-ce.desktop']
+search-entry-border-radius=(true, 25)
+update-notifier-project-version=70
 
 [blur-my-shell]
-pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}, 'pipeline_09235827297049': {'name': <'New pipeline'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_81186299726624'>, 'params': <@a{sv} {}>}>]>}}
 settings-version=2
 
 [blur-my-shell/appfolder]
-blur=false
 brightness=0.59999999999999998
 sigma=30
 
 [blur-my-shell/applications]
 blur=false
-blur-on-overview=false
-brightness=1.0
 dynamic-opacity=false
-opacity=210
-sigma=20
-whitelist=['Code']
+whitelist=['kitty']
 
 [blur-my-shell/coverflow-alt-tab]
 pipeline='pipeline_default'
 
 [blur-my-shell/dash-to-dock]
-blur=false
+blur=true
 brightness=0.59999999999999998
 pipeline='pipeline_default_rounded'
 sigma=30
@@ -31,11 +33,9 @@ static-blur=true
 style-dash-to-dock=0
 
 [blur-my-shell/lockscreen]
-blur=false
 pipeline='pipeline_default'
 
 [blur-my-shell/overview]
-blur=true
 pipeline='pipeline_default'
 
 [blur-my-shell/panel]
@@ -43,246 +43,281 @@ blur=false
 brightness=0.59999999999999998
 force-light-text=false
 override-background=true
+override-background-dynamically=false
 pipeline='pipeline_default'
 sigma=30
 static-blur=true
-unblur-in-overview=true
+style-panel=0
 
 [blur-my-shell/screenshot]
-blur=false
 pipeline='pipeline_default'
 
 [blur-my-shell/window-list]
-blur=false
 brightness=0.59999999999999998
 sigma=30
 
 [dash-to-dock]
+apply-custom-theme=false
 background-opacity=0.80000000000000004
-dash-max-icon-size=48
-dock-position='LEFT'
+custom-background-color=false
+custom-theme-shrink=false
+dash-max-icon-size=50
+dock-position='BOTTOM'
 height-fraction=0.90000000000000002
 hot-keys=false
 preferred-monitor=-2
-preferred-monitor-by-connector='primary'
+preferred-monitor-by-connector='DP-3'
+show-show-apps-button=false
+transparency-mode='DEFAULT'
 
 [dash-to-panel]
 animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=3
+appicon-padding=2
 dot-position='BOTTOM'
 extension-version=72
+global-border-radius=0
 hotkeys-overlay-combo='TEMPORARILY'
-panel-anchors='{"LEN-U3W0T8Y5":"MIDDLE"}'
-panel-element-positions='{"LEN-U3W0T8Y5":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
-panel-lengths='{"LEN-U3W0T8Y5":100}'
+multi-monitors=false
+panel-anchors='{"LEN-V90DVW82":"MIDDLE","BOE-0x00000000":"MIDDLE"}'
+panel-element-positions='{"LEN-V90DVW82":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"BOE-0x00000000":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-lengths='{}'
 panel-positions='{}'
-panel-sizes='{"LEN-U3W0T8Y5":26}'
+panel-sizes='{"LEN-V90DVW82":24,"BOE-0x00000000":24}'
 prefs-opened=false
 window-preview-title-position='TOP'
 
-[ding]
-check-x11wayland=true
-
 [just-perfection]
-accent-color-icon=false
 animation=2
-dash-app-running=true
-dash-icon-size=0
-invert-calendar-column-items=false
-panel-button-padding-size=0
-panel-icon-size=0
-panel-size=0
-workspace=true
-workspace-popup=false
+support-notifier-showed-version=36
+support-notifier-type=0
 
 [lockscreen-extension]
-blur-radius-1=40
+background-image-path-1='file:///home/andrey/.local/share/backgrounds/2026-02-10-08-10-29-kanagawa.jpg'
+background-image-path-2='file:///home/andrey/.local/share/backgrounds/2026-02-10-08-10-29-kanagawa.jpg'
+blur-radius-1=60
+blur-radius-2=60
+gradient-direction-1='none'
+gradient-direction-2='none'
+user-background-1=false
+user-background-2=false
 
 [mediacontrols]
-colored-player-icon=true
-extension-position='Right'
+clip-texts-menu=false
+colored-player-icon=false
+element-order=['icon', 'title', 'controls', 'menu']
+extension-index=uint32 3
+extension-position='Left'
+hide-media-notification=true
+label-width=uint32 200
+max-widget-width=200
+mouse-actions=['toggle_info', 'toggle_menu', 'none', 'none', 'none', 'none', 'none', 'none']
+prefer-using-seek=false
+scroll-track-label=false
+seek-interval-secs=5
 show-control-icons=false
-show-label=false
+show-label=true
+show-sources-menu=false
+show-text=false
 
 [openbar]
-accent-color=['0.902', '0.380', '0.000']
-accent-override=false
-apply-menu-notif=true
-auto-bgalpha=true
-autofg-bar=true
-autofg-menu=true
+autofg-bar=false
 autohg-bar=true
 autohg-menu=true
 autotheme-dark='Dark'
 autotheme-font=false
+autotheme-light='Light'
 autotheme-refresh=true
-bartype='Islands'
-bcolor=['0.820', '0.686', '0.482']
-bg-change=true
-bgalpha=0.0
-bgalpha-wmax=1.0
-bgcolor=['0.184', '0.267', '0.196']
+bcolor=['0.514', '0.647', '0.596']
+bg-change=false
+bgalpha=0.94999999999999996
+bgcolor=['0.235', '0.220', '0.208']
 bgcolor-wmax=['0.118', '0.118', '0.118']
 bgcolor2=['0.286', '0.243', '0.180']
-bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
+bgpalette=false
+bguri='file:///home/andrey/.local/share/backgrounds/2025-01-22-12-19-18-desktop.jpg'
 border-wmax=true
-bottom-margin=6.5
+bottom-margin=4.5
 boxalpha=0.0
-boxcolor=['0.184', '0.267', '0.196']
-bwidth=1.0
-count1=302590
+boxcolor=['0.188', '0.263', '0.200']
+bwidth=2.0
+count1=283263
 count10=3
-count11=1
+count11=2
 count12=1
-count2=249775
-count3=115758
-count4=85717
-count5=13971
-count6=10821
-count7=9899
-count8=5150
-count9=1314
+count2=249278
+count3=111543
+count4=82591
+count5=22821
+count6=22699
+count7=9117
+count8=8999
+count9=4683
 cust-margin-wmax=true
-dark-accent-color=['0.902', '0.380', '0.000']
-dark-bcolor=['0.820', '0.686', '0.482']
-dark-bgcolor=['0.184', '0.267', '0.196']
+dark-bcolor=['0.514', '0.647', '0.596']
+dark-bgcolor=['0.235', '0.220', '0.208']
 dark-bgcolor-wmax=['0.118', '0.118', '0.118']
 dark-bgcolor2=['0.286', '0.243', '0.180']
-dark-bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
-dark-boxcolor=['0.184', '0.267', '0.196']
-dark-hcolor=['0.698', '0.745', '0.573']
+dark-bguri='file:///home/andrey/.local/share/backgrounds/2025-01-22-12-19-18-desktop.jpg'
+dark-boxcolor=['0.188', '0.263', '0.200']
+dark-fgcolor=['0.922', '0.859', '0.698']
+dark-hcolor=['0.698', '0.745', '0.584']
 dark-hscd-color=['0.573', '0.824', '0.824']
-dark-iscolor=['0.184', '0.267', '0.196']
-dark-mbcolor=['0.698', '0.745', '0.573']
-dark-mbgcolor=['0.192', '0.204', '0.133']
-dark-mhcolor=['0.698', '0.745', '0.573']
+dark-iscolor=['0.188', '0.263', '0.200']
+dark-mbcolor=['0.698', '0.745', '0.584']
+dark-mbgcolor=['0.196', '0.204', '0.133']
+dark-mhcolor=['0.698', '0.745', '0.584']
 dark-mscolor=['0.573', '0.824', '0.824']
 dark-mshcolor=['0.000', '0.000', '0.000']
-dark-palette1=['115', '120', '83']
-dark-palette10=['121', '156', '180']
-dark-palette11=['68', '156', '92']
+dark-palette1=['112', '115', '81']
+dark-palette10=['62', '148', '89']
+dark-palette11=['124', '156', '180']
 dark-palette12=['132', '156', '180']
 dark-palette2=['193', '208', '208']
-dark-palette3=['56', '80', '59']
-dark-palette4=['172', '144', '104']
-dark-palette5=['158', '166', '148']
-dark-palette6=['202', '174', '131']
-dark-palette7=['87', '72', '59']
-dark-palette8=['178', '190', '146']
-dark-palette9=['99', '105', '43']
+dark-palette3=['57', '80', '60']
+dark-palette4=['171', '142', '103']
+dark-palette5=['156', '161', '141']
+dark-palette6=['145', '160', '96']
+dark-palette7=['86', '73', '60']
+dark-palette8=['201', '173', '131']
+dark-palette9=['178', '190', '149']
 dark-shcolor=['0.000', '0.000', '0.000']
 dark-smbgcolor=['0.286', '0.243', '0.180']
 dark-vw-color=['0.573', '0.824', '0.824']
 dark-winbcolor=['0.573', '0.824', '0.824']
 default-font='Sans 12'
 fgalpha=1.0
-hcolor=['0.698', '0.745', '0.573']
+fgcolor=['0.922', '0.859', '0.698']
+font='Roboto 12'
+hcolor=['0.698', '0.745', '0.584']
 hscd-color=['0.573', '0.824', '0.824']
 import-export=false
 isalpha=0.94999999999999996
-iscolor=['0.184', '0.267', '0.196']
-light-bguri='file:///home/andrey/.local/share/backgrounds/2025-10-09-20-05-46-The_Artists_Garden_at_Eragny.png'
-light-palette1=['115', '120', '83']
-light-palette10=['121', '156', '180']
-light-palette11=['68', '156', '92']
+iscolor=['0.188', '0.263', '0.200']
+light-bcolor=['0.812', '0.682', '0.482']
+light-bgcolor=['0.863', '0.882', '0.812']
+light-bgcolor-wmax=['0.922', '0.922', '0.922']
+light-bgcolor2=['0.827', '0.831', '0.776']
+light-bguri='file:///home/andrey/.local/share/backgrounds/2025-01-22-12-19-18-desktop.jpg'
+light-boxcolor=['0.863', '0.882', '0.812']
+light-hcolor=['0.224', '0.314', '0.235']
+light-hscd-color=['0.514', '0.792', '0.792']
+light-iscolor=['0.863', '0.882', '0.812']
+light-mbcolor=['0.224', '0.314', '0.235']
+light-mbgcolor=['0.925', '0.914', '0.902']
+light-mhcolor=['0.224', '0.314', '0.235']
+light-mscolor=['0.514', '0.792', '0.792']
+light-mshcolor=['0.000', '0.000', '0.000']
+light-palette1=['112', '115', '81']
+light-palette10=['62', '148', '89']
+light-palette11=['124', '156', '180']
 light-palette12=['132', '156', '180']
 light-palette2=['193', '208', '208']
-light-palette3=['56', '80', '59']
-light-palette4=['172', '144', '104']
-light-palette5=['158', '166', '148']
-light-palette6=['202', '174', '131']
-light-palette7=['87', '72', '59']
-light-palette8=['178', '190', '146']
-light-palette9=['99', '105', '43']
-margin-wmax=2.5
-mbcolor=['0.698', '0.745', '0.573']
-mbgcolor=['0.192', '0.204', '0.133']
-menustyle=true
+light-palette3=['57', '80', '60']
+light-palette4=['171', '142', '103']
+light-palette5=['156', '161', '141']
+light-palette6=['145', '160', '96']
+light-palette7=['86', '73', '60']
+light-palette8=['201', '173', '131']
+light-palette9=['178', '190', '149']
+light-shcolor=['0.000', '0.000', '0.000']
+light-smbgcolor=['0.827', '0.831', '0.776']
+light-vw-color=['0.514', '0.792', '0.792']
+light-winbcolor=['0.514', '0.792', '0.792']
+margin=4.5
+mbcolor=['0.698', '0.745', '0.584']
+mbgcolor=['0.196', '0.204', '0.133']
 mfgalpha=1.0
-mhcolor=['0.698', '0.745', '0.573']
+mhcolor=['0.698', '0.745', '0.584']
 monitor-height=1080
 monitor-width=1920
 mscolor=['0.573', '0.824', '0.824']
 mshcolor=['0.000', '0.000', '0.000']
 neon=false
-neon-wmax=false
-palette1=['115', '120', '83']
-palette10=['121', '156', '180']
-palette11=['68', '156', '92']
+palette1=['112', '115', '81']
+palette10=['62', '148', '89']
+palette11=['124', '156', '180']
 palette12=['132', '156', '180']
 palette2=['193', '208', '208']
-palette3=['56', '80', '59']
-palette4=['172', '144', '104']
-palette5=['158', '166', '148']
-palette6=['202', '174', '131']
-palette7=['87', '72', '59']
-palette8=['178', '190', '146']
-palette9=['99', '105', '43']
+palette3=['57', '80', '60']
+palette4=['171', '142', '103']
+palette5=['156', '161', '141']
+palette6=['145', '160', '96']
+palette7=['86', '73', '60']
+palette8=['201', '173', '131']
+palette9=['178', '190', '149']
 pause-reload=false
-position='Top'
-radius-bottomleft=true
-radius-bottomright=true
-radius-topleft=true
-radius-topright=true
 reloadstyle=false
 set-bottom-margin=true
-set-fullscreen=true
 set-notif-position=true
-set-overview=false
 shcolor=['0.000', '0.000', '0.000']
 smbgcolor=['0.286', '0.243', '0.180']
 smbgoverride=false
-trigger-autotheme=false
+trigger-autotheme=true
 trigger-reload=true
 vw-color=['0.573', '0.824', '0.824']
-width-bottom=true
-width-left=true
-width-right=true
-width-top=true
 winbcolor=['0.573', '0.824', '0.824']
 wmax-hbarhint=true
-wmaxbar=false
 
 [rounded-window-corners-reborn]
-global-rounded-corner-settings={'padding': <{'left': uint32 1, 'right': 1, 'top': 1, 'bottom': 1}>, 'keepRoundedCorners': <{'maximized': false, 'fullscreen': false}>, 'borderRadius': <uint32 6>, 'smoothing': <0.0>, 'borderColor': <(0.5, 0.5, 0.5, 1.0)>, 'enabled': <true>}
+blacklist=['ulauncher']
+border-color=(0.99607843160629272, 0.50196081399917603, 0.098039224743843079, 1.0)
+border-width=2
+global-rounded-corner-settings={'padding': <{'left': uint32 1, 'right': 1, 'top': 1, 'bottom': 1}>, 'keepRoundedCorners': <{'maximized': false, 'fullscreen': false}>, 'borderRadius': <uint32 9>, 'smoothing': <0.0>, 'borderColor': <(0.51372551918029785, 0.64705884456634521, 0.59607845544815063, 1.0)>, 'enabled': <true>}
 settings-version=uint32 7
+skip-libadwaita-app=false
 
 [space-bar/appearance]
-application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
+application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 3px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 3px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 3px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
+workspace-margin=3
 
 [space-bar/behavior]
-smart-workspace-names=false
+show-empty-workspaces=true
+toggle-overview=false
 
 [space-bar/shortcuts]
-enable-activate-workspace-shortcuts=false
+enable-activate-workspace-shortcuts=true
 enable-move-to-workspace-shortcuts=true
-open-menu=@as []
 
 [space-bar/state]
 version=34
 
+[switcher]
+font-size=uint32 20
+show-switcher=['<Super>r']
+
+[system-monitor]
+show-download=false
+show-swap=false
+show-upload=false
+
 [tactile]
-col-0=1
-col-1=2
+background-color='rgba(128,197,255,0.1)'
+border-color='rgba(128,176,255,0.5)'
+col-1=0
 col-2=1
 col-3=0
-gap-size=32
-row-0=1
-row-1=1
+gap-size=7
+row-2=0
+show-tiles=['<Super>t']
+text-color='rgb(69,133,136)'
+text-size=0
 
-[tiling-assistant]
-focus-hint-color='rgb(203,67,20)'
-last-version-installed=51
-tiling-popup-all-workspace=true
-
-[tophat]
-meter-fg-color='#78ab50'
-mount-to-monitor='/'
-network-usage-unit='bits'
-show-cpu=false
-show-disk=false
-show-fs=false
-show-icons=false
-show-mem=false
+[tilingshell]
+enable-window-border=false
+focus-window-right=['']
+inner-gaps=uint32 8
+last-version-name-installed='16.4'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
+overridden-settings='{}'
+selected-layouts=[['Layout 3'], ['Layout 3']]
+show-indicator=false
+snap-assistant-threshold=55
 
 [user-theme]
-name='Gruvbox-Orange-Dark-Soft'
+name='Gruvbox-Dark-Soft'
+
+[vitals]
+include-static-info=false
+position-in-panel=0
+show-processor=true
