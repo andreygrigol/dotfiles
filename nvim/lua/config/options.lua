@@ -8,4 +8,4 @@ vim.o.smartindent = true
 vim.o.autoindent = true
 vim.opt.colorcolumn = "80"
 vim.g.NERDTreeShowHidden = 1
-vim.opt.clipboard = ""
+vim.opt.clipboard = "unnamedplus"

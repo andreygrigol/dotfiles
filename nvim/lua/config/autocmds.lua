@@ -18,3 +18,4 @@ local set_autoformat = function(pattern, bool_val)
 end
 
 set_autoformat({ "c" }, false)
+set_autoformat({ "rust" }, false)
