@@ -23,11 +23,30 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    pcall(function()
+      vim.lsp.semantic_tokens.enable(true, { bufnr = args.buf })
+    end)
+  end,
+})
+
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 	}
 })
+
+require("gruvbox").setup({
+  overrides = {
+    ["@variable"] = { fg = "#83a598" },
+    ["@variable.python"] = { fg = "#8ec07c" },
+    ["@parameter"] = { fg = "#fabd2f" },
+    ["@function"] = { fg = "#b8bb26" },
+  },
+})
+
+vim.cmd.colorscheme("gruvbox")
 
 vim.cmd([[colorscheme gruvbox]])
 
