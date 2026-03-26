@@ -4,7 +4,6 @@ return {
   priority = 1000,
   opts = function()
     return {
-      transparent_mode = true,
       italic = {
         strings = false,
         emphasis = false,
@@ -12,7 +11,6 @@ return {
         operators = false,
         folds = false,
       },
-      contrast = "soft",
     }
   end,
 }
