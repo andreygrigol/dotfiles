@@ -8,7 +8,10 @@ return {
             "lua",
             "c",
             "rust",
-            "python"
+            "python",
+			"html",
+			"css",
+			"typescript",
         },
         auto_install = false,
     }

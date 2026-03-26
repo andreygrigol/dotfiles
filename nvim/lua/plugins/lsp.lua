@@ -9,6 +9,10 @@ return {
 	  });
       vim.lsp.enable("pyright");
       vim.lsp.enable("lua_ls");
+      vim.lsp.enable("clangd");
+      vim.lsp.enable("eslint");
+      vim.lsp.enable("ruff");
+      vim.lsp.enable("rust_analyzer");
     end,
   },
   {

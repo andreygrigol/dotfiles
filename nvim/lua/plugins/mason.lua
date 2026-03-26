@@ -21,6 +21,7 @@ return {
 			"rust_analyzer",
 			"clangd",
 			"eslint",
+			"vtsls",
 		}
 	}
   }

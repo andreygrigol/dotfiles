@@ -11,8 +11,7 @@ local eslint_config_files = {
   'eslint.config.js',
   'eslint.config.mjs',
   'eslint.config.cjs',
-  'eslint.config.ts',
-  'eslint.config.mts',
+  'eslint.config.ts', 'eslint.config.mts',
   'eslint.config.cts',
 }
 

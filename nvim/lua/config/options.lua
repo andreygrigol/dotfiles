@@ -1,0 +1,14 @@
+vim.g.mapleader = ' '
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.mouse = 'a'
+vim.opt.ignorecase = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.colorcolumn = "80"
+vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
+vim.opt.undofile = true
+vim.opt.undodir = vim.fn.stdpath("data") .. "/undo"
+vim.opt.undolevels = 10000
+vim.opt.undoreload = 10000

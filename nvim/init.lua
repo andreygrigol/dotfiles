@@ -1,14 +1,14 @@
 vim.g.mapleader = ' '
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.mouse = 'a'
-vim.opt.ignorecase = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
-vim.opt.colorcolumn = "80"
-vim.opt.clipboard = "unnamedplus"
-vim.opt.autoindent = true
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  callback = function()
+    local mark = vim.api.nvim_buf_get_mark(0, '"')
+    local lcount = vim.api.nvim_buf_line_count(0)
+    if mark[1] > 0 and mark[1] <= lcount then
+      pcall(vim.api.nvim_win_set_cursor, 0, mark)
+    end
+  end,
+})
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -31,18 +31,7 @@ require("lazy").setup({
 
 vim.cmd([[colorscheme gruvbox]])
 
-local builtin = require('telescope.builtin')
-
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>qq', ':wqall<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<S-h>', ':bprev<CR>')
-vim.keymap.set('n', '<S-l>', ':bnext<CR>')
-vim.keymap.set('x', "<C-j>", ":move '>+1<CR>gv=gv")
-vim.keymap.set('x', "<C-k>", ":move '<-2<CR>gv=gv")
-
-vim.opt.termguicolors = true
+require("config.keymaps")
+require("config.options")
 require("bufferline").setup{}
+require('lualine').setup()
