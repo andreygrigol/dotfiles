@@ -27,5 +27,9 @@ return {
 			capabilities = capabilities,
 		})
 	  end,
-  }
+  },
+  {
+	  "folke/lazydev.nvim",
+	  opts = {}
+  },
 }
