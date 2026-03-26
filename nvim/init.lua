@@ -37,17 +37,6 @@ require("lazy").setup({
 	}
 })
 
-require("gruvbox").setup({
-  overrides = {
-    ["@variable"] = { fg = "#83a598" },
-    ["@variable.python"] = { fg = "#8ec07c" },
-    ["@parameter"] = { fg = "#fabd2f" },
-    ["@function"] = { fg = "#b8bb26" },
-  },
-})
-
-vim.cmd.colorscheme("gruvbox")
-
 vim.cmd([[colorscheme gruvbox]])
 
 require("config.keymaps")
