@@ -47,6 +47,10 @@ require("lazy").setup({
 	}
 })
 
+require("ibl").setup {
+	whitespace = { highlight = { "Whitespace", "NonText" } },
+}
+
 vim.cmd([[colorscheme gruvbox]])
 
 require("config.keymaps")
