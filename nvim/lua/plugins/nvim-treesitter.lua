@@ -9,7 +9,7 @@ return {
 	local languages = {
 	  'lua', 'rust', 'python',
 	  'typescript', 'tsx', 'javascript', 'css',
-	  'regex', 'markdown',
+	  'regex', 'markdown', 'gdscript',
 	}
 	ts.install(languages)
 

@@ -8,6 +8,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 -- Quit
 vim.keymap.set('n', '<leader>qq', ':wqall<CR>', { desc = 'Save and quit all' })
+vim.keymap.set('n', '<C-q>', ':q!<CR>', { desc = 'Quit' })
 
 -- Move lines
 vim.keymap.set('x', '<C-j>', ":move '>+1<CR>gv=gv")
@@ -21,3 +22,7 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover' })
 
 -- Close buffer
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Close buffer' })
+
+-- Indentation
+vim.keymap.set('v', '>', '>gv')
+vim.keymap.set('v', '<', '<gv')
