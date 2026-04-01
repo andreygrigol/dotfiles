@@ -7,7 +7,7 @@ return {
 	local ts = require('nvim-treesitter')
 
 	local languages = {
-	  'lua', 'rust', 'python',
+	  'lua', 'rust', 'python', 'xml',
 	  'typescript', 'tsx', 'javascript', 'css',
 	  'regex', 'markdown', 'gdscript',
 	}

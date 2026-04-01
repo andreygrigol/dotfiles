@@ -16,6 +16,7 @@ return {
 	opts = {
 		ensure_installed = {
 			"lua_ls",
+            "black",
 			"pyright",
 			"ruff",
 			"rust_analyzer",

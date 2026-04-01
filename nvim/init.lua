@@ -53,6 +53,9 @@ require("ibl").setup {
 
 vim.cmd([[colorscheme gruvbox]])
 
+local TagConfigs = require("nvim-ts-autotag.config.init")
+TagConfigs:add_alias("ui", "html")
+
 require("config.keymaps")
 require("config.options")
 require("bufferline").setup{}

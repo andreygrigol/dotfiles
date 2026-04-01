@@ -26,3 +26,7 @@ vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Close buffer' })
 -- Indentation
 vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('v', '<', '<gv')
+
+-- Copilot
+vim.keymap.set('n', '<leader>aa', ':CopilotChatOpen<CR>', { desc = 'Open chat with Copilot' })
+
