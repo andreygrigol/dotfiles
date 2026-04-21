@@ -1,0 +1,11 @@
+swaync
+swaylock
+swayidle
+hyprpaper
+waybar
+hyprshot
+btop
+kitty
+fuzzel
+python_hypr_power.sh
+cava
