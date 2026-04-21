@@ -1,0 +1,70 @@
+* {
+  background-color: #32302f;
+  color: #ebdbb2;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 15px;
+}
+
+#custom-spacer {
+  color: #bdae93;
+  opacity: 0.5;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 5px;
+  min-width: 9px;
+  color: #c0caf5;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#window {
+  margin: 0 10;
+}
+
+#expand {
+  margin: 0 17 0 15;
+}
+
+#tray {
+  margin-left: 15px;
+}
+
+#pulseaudio {
+  margin: 0 22 0 15px;
+}
+
+#network {
+  padding: 0 6px;
+  margin: 0 5px;
+}
+
+#custom-spotify {
+  margin: 0 10;
+  color: #689d6a;
+}
+
+#custom-spotify:hover {
+  background-color: #32302f;
+}
+
+#custom-arch {
+  margin: 0 15;
+  font-size: 20px;
+}
+
+#cpu {
+  margin: 0 10;
+}
+
+#memory {
+  margin: 0 10;
+}

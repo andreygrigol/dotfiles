@@ -1,4 +1,6 @@
 configuration {
+	font: "CaskaydiaCove Nerd Font 12";
+	icon-theme: "Gruvbox-Plus-Dark";
     display-ssh:    "";
     display-run:    "";
     display-drun:   "";
