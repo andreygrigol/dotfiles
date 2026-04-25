@@ -4,30 +4,32 @@
   "position": "top",
   "spacing": 0,
   "height": 32,
-  "modules-left": ["custom/arch", "hyprland/workspaces", "custom/spotify"],
+  "modules-left": [
+		"custom/arch",
+		"hyprland/workspaces",
+		"mpris"
+	],
   "modules-center": ["clock"],
   "modules-right": [
     "group/expand",
     "custom/spacer",
     "pulseaudio",
-    "custom/spacer",
-    "network",
 	"custom/spacer",
 	"cpu",
 	"custom/spacer",
-	"memory"
+	"memory",
   ],
 
   "clock": {
-	"format": "{:%a %d/%m/%Y - %H:%M}",
+	"format": "{:%H:%M}",
 	"tooltip-format": "<span size='15000'><tt>{calendar}</tt></span>",
 	"calendar": {
 		"mode": "month",
 		"format": {
-			"months": "<span color='#F5C2E7'><b>{}</b></span>",
-			"weekdays": "<span color='#89B4FA'><b>{}</b></span>",
-			"days": "<span color='#CDD6F4'><b>{}</b></span>",
-			"today": "<span color='#F9E2AF'><b>{}</b></span>",
+			"months": "<span color='#fe8019'><b>{}</b></span>",
+			"weekdays": "<span color='#83a598'><b>{}</b></span>",
+			"days": "<span color='#a89984'><b>{}</b></span>",
+			"today": "<span color='#ebdbb2'><b>{}</b></span>",
 		}
 	},
 	"on-click": "gnome-calendar",
@@ -37,19 +39,17 @@
     "format": "⏽",
   },
 
-  "custom/spotify": {
-    "format": "{icon} {text}",
-    "escape": true,
-    "return-type": "json",
-    "max-length": 40,
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "killall spotify",
-    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-    "on-scroll-up" : "playerctl -p spotify next",
-    "on-scroll-down" : "playerctl -p spotify previous",
-    "exec": "$HOME/.config/waybar/mediaplayer.py", // Script in resources/custom_modules folder
-    "exec-if": "pgrep spotify"
-},
+    "mpris": {
+        "format": "[   {status_icon} | {dynamic} ]",
+        "interval": 1,
+        "dynamic-len": 40,
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸",
+            "stopped": ""
+        },
+        "dynamic-order": ["artist"]
+    },
 
   "cpu": {
 	"interval": 10,
@@ -74,17 +74,17 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "",
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "active": "󱓻",
+      "default": "",
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "active": "",
     },
     "persistent-workspaces": {
       "*": 6,

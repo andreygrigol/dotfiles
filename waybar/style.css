@@ -1,6 +1,11 @@
+@define-color background #32302F;
+@define-color text #EBDBB2;
+@define-color color1 #78997A;
+@define-color color2 #BDAE93;
+
 * {
-  background-color: #32302f;
-  color: #ebdbb2;
+  background-color: @background;
+  color: @text;
   font-weight: bold;
   border: none;
   border-radius: 0;
@@ -10,16 +15,15 @@
 }
 
 #custom-spacer {
-  color: #bdae93;
+  color: @color2;
   opacity: 0.5;
 }
 
 #workspaces button {
   all: initial;
-  padding: 0 6px;
+  padding: 0 4px;
   margin: 0 5px;
   min-width: 9px;
-  color: #c0caf5;
 }
 
 #workspaces button.empty {
@@ -42,18 +46,17 @@
   margin: 0 22 0 15px;
 }
 
-#network {
-  padding: 0 6px;
-  margin: 0 5px;
+#mpris {
+  margin: 0 0 0 5px;
+  padding: 0 9px;
+  background-color: @background;
+  color: @text;
 }
 
-#custom-spotify {
-  margin: 0 10;
-  color: #689d6a;
-}
-
-#custom-spotify:hover {
-  background-color: #32302f;
+#mpris.playing {
+  background-color: @color1;
+  border-radius: 2px;
+  color: @background;
 }
 
 #custom-arch {
