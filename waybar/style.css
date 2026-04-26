@@ -2,6 +2,7 @@
 @define-color text #EBDBB2;
 @define-color color1 #78997A;
 @define-color color2 #BDAE93;
+@define-color bg_hover rgba(200, 200, 200, 0.3);
 
 * {
   background-color: @background;
@@ -19,15 +20,35 @@
   opacity: 0.5;
 }
 
+#workspaces {
+  color: transparent;
+  margin-right: 1.5px;
+  margin-left: 1.5px;
+}
 #workspaces button {
-  all: initial;
-  padding: 0 4px;
-  margin: 0 5px;
-  min-width: 9px;
+  padding: 3px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#workspaces button.active {
+  border-bottom: 3px solid @text;
+}
+
+#workspaces button.focused {
+  color: @bg_active;
+}
+
+#workspaces button.urgent {
+  background: rgba(255, 200, 0, 0.35);
+  border-bottom: 3px dashed @warning_color;
 }
 
 #workspaces button.empty {
   opacity: 0.5;
+}
+
+#workspaces button:hover {
+  background: @bg_hover;
 }
 
 #window {
@@ -64,10 +85,14 @@
   font-size: 20px;
 }
 
+#bluetooth {
+  margin: 0 22 0 15px;
+}
+
 #cpu {
-  margin: 0 10;
+  margin: 0 22 0 15px;
 }
 
 #memory {
-  margin: 0 10;
+  margin: 0 22 0 15px;
 }
