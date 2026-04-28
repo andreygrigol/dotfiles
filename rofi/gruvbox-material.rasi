@@ -102,7 +102,7 @@ element.selected.urgent {
 }
 
 element-text, element-icon {
-    size: 50;
+    size: 46;
     margin: 0 10 0 0;
     vertical-align: 0.5;
     background-color: inherit;
