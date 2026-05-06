@@ -6,10 +6,10 @@ include ./gruvbox_dark_soft.conf
 # bold_font                   auto
 # italic_font                 auto
 # bold_italic_font            auto
-font_size                   10.5
+font_size                   9.5
 
 #Padding
-window_padding_width        5
+window_padding_width        7
 
 #Ignore this if you don't have a high refresh rate monitor
 input_delay                 0
@@ -20,16 +20,16 @@ sync_to_monitor             no
 enable_audio_bell           no
 
 #Transparent background
-background_opacity          0.95
+# background_opacity          0.95
 dynamic_background_opacity  yes
 # linux_display_server        x11
 
 hide_window_decorations		yes
-cursor_trail				1
+# cursor_trail				1
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Fira Mono"
+font_family      family="FantasqueSansM Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

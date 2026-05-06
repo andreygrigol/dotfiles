@@ -11,6 +11,7 @@ return {
         operators = false,
         folds = false,
       },
+      transparent_mode = true,
     }
   end,
 }
