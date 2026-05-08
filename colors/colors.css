@@ -1,0 +1,24 @@
+/* Gruvbox Dark Palette */
+
+@define-color background #282828; /* bg0 */
+@define-color foreground #ebdbb2; /* fg1 */
+
+@define-color gray #3c3836; /* bg1 */
+@define-color select #504945; /* bg2 */
+
+/* Accent colors */
+@define-color red #cc241d;
+@define-color green #98971a;
+@define-color yellow #d79921;
+@define-color blue #458588;
+@define-color purple #b16286;
+@define-color aqua #689d6a;
+@define-color orange #d65d0e;
+
+/* Optional extended tones (caso queira evoluir depois) */
+@define-color bg0_h #1d2021;
+@define-color bg0_s #32302f;
+@define-color bg3 #665c54;
+@define-color fg0 #fbf1c7;
+@define-color fg2 #d5c4a1;
+@define-color fg3 #bdae93;

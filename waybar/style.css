@@ -76,7 +76,7 @@
 
 #mpris.playing {
   background-color: @color1;
-  border-radius: 2px;
+  border-radius: 3px;
   color: @background;
 }
 
