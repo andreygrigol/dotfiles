@@ -1,6 +1,5 @@
 swaync
 swaylock
-swayidle
 hyprpaper
 waybar
 hyprshot
