@@ -1,0 +1,13 @@
+[general]
+import = [
+	"~/.config/alacritty/themes/gruvbox_dark_soft.toml"
+]
+
+[window]
+opacity = 0.9
+blur = true
+padding = { x = 7, y = 7}
+
+[font]
+normal = { family = "CaskaydiaCove Nerd Font", style = "regular" }
+size = 9.5
