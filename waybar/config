@@ -1,12 +1,12 @@
 {
   "reload_style_on_change": true,
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "spacing": 0,
   "height": 32,
   "modules-left": [
 		"custom/arch",
-		"hyprland/workspaces",
+		"niri/workspaces",
 		"mpris"
 	],
   "modules-center": ["clock"],
@@ -58,7 +58,7 @@
 	"interval": 10,
     "format": "{}% ",
     "max-length": 10,
-	"on-click": "kitty btop"
+	"on-click": "alacritty -e btop"
 },
 
   "memory": {
@@ -73,7 +73,7 @@
 	"on-click": "fuzzel"
 },
 
-  "hyprland/workspaces": {
+  "niri/workspaces": {
     "format": "{icon}",
     "persistent-workspaces": {
       "*": 6,
@@ -131,14 +131,14 @@
     "tooltip": false,
   },
 
-  "bluetooth": {
-	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-	"format": "",
-	"format-disabled": "", // an empty format will hide the module
-	"format-connected": " {num_connections} connected",
-	"tooltip-format": "{controller_alias}\t{controller_address}",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+"bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 	"on-click": "blueman-manager"
-	}
-}
+}}
