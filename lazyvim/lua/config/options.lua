@@ -6,8 +6,8 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = false
 vim.o.smartindent = true
 vim.o.autoindent = true
+vim.opt.spell = false
 vim.opt.colorcolumn = "80"
-vim.g.NERDTreeShowHidden = 1
 vim.opt.clipboard = "unnamedplus"
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown" },
@@ -15,3 +15,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spell = false
   end,
 })
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.g.NERDTreeShowHidden = 1
