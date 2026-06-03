@@ -46,3 +46,13 @@ keymap.set("n", "<leader>qq", "<cmd>wqall<CR>", { silent = true, desc = "Quit al
 keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", opts)
 keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", opts)
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", opts)
+
+-- Toggleterm
+vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>", opts)
+
+-- Indentation
+vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+
+-- Clean text
+vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
