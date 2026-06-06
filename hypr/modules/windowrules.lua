@@ -32,3 +32,7 @@ hl.window_rule({
 })
 
 hl.layer_rule({ match = { namespace = "gtk-layer-shell" }, blur = true })
+
+hl.window_rule({ match = { title = "Picture-in-Picture" }, float = true, size = { 640, 360 } })
+
+hl.window_rule({ match = { class = "chrome-calendar.google.com__-Default" }, float = true, size = { 1280, 720 } })

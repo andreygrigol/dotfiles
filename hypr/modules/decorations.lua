@@ -1,9 +1,9 @@
 hl.config({
 	general = {
 		gaps_in = 3,
-		gaps_out = 5,
+		gaps_out = 3,
 
-		border_size = 2,
+		border_size = 3,
 
 		col = {
 			active_border = { colors = { "rgba(d65d0eff)", "rgba(fe8019ee)" }, angle = 45 },
@@ -19,8 +19,14 @@ hl.config({
 		layout = "dwindle",
 	},
 
+    groups = {
+        col = {
+            active_border = { colors = { "rgba(d65d0eff)", "rgba(fe8019ee)"} },
+        }
+    },
+
 	decoration = {
-		rounding = 3,
+		rounding = 5,
 		rounding_power = 2,
 
 		-- Change transparency of focused and unfocused windows

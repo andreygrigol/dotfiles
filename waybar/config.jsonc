@@ -6,8 +6,8 @@
   "height": 32,
   "modules-left": [
 		"custom/arch",
-		"niri/workspaces",
-		"mpris"
+		"hyprland/workspaces",
+		"group/media"
 	],
   "modules-center": ["clock"],
   "modules-right": [
@@ -19,7 +19,7 @@
 	"custom/spacer",
 	"cpu",
 	"custom/spacer",
-	"memory",
+	"memory"
   ],
 
   "clock": {
@@ -31,38 +31,55 @@
 			"months": "<span color='#fe8019'><b>{}</b></span>",
 			"weekdays": "<span color='#83a598'><b>{}</b></span>",
 			"days": "<span color='#a89984'><b>{}</b></span>",
-			"today": "<span color='#ebdbb2'><b>{}</b></span>",
+			"today": "<span color='#ebdbb2'><b>{}</b></span>"
 		}
 	},
-	"on-click": "gnome-calendar",
+	"on-click": "chromium --app=https://calendar.google.com"
 },
 
   "custom/spacer": {
-    "format": "⏽",
+    "format": "⏽"
   },
 
-    "mpris": {
-        "format": "[   {status_icon} | {dynamic} ]",
+    "group/media": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/media-animation",
+            "custom/media-now-playing",
+            "custom/media-time"
+        ]
+    },
+
+    "custom/media-now-playing": {
+        "exec": "~/.config/waybar/custom_module/now-playing.sh",
+        "on-click": "playerctl --player=spotify play-pause",
+        "on-click-right": "playerctl --player=spotify next",
+        "escape": true,
+        "tooltip": false
+    },
+
+    "custom/media-animation": {
+        "exec": "~/.config/waybar/custom_module/media-animation.sh",
+        "escape": true,
+        "tooltip": false
+    },
+
+    "custom/media-time": {
+        "exec": "~/.config/waybar/custom_module/media-time.sh",
+        "escape": true,
         "interval": 1,
-        "dynamic-len": 40,
-		"player": "spotify",
-        "status-icons": {
-            "playing": "▶",
-            "paused": "⏸",
-            "stopped": ""
-        },
-        "dynamic-order": ["artist"]
+        "tooltip": false
     },
 
   "cpu": {
 	"interval": 10,
     "format": "{}% ",
     "max-length": 10,
-	"on-click": "alacritty -e btop"
+	"on-click": "kitty btop"
 },
 
   "memory": {
-    "interval": 30,
+    "interval": 3,
     "format": "{used:0.1f}G/{total:0.1f}G ",
 	"on-click": "swaync-client -t -sw"
 },
@@ -73,16 +90,16 @@
 	"on-click": "fuzzel"
 },
 
-  "niri/workspaces": {
+  "hyprland/workspaces": {
     "format": "{icon}",
     "persistent-workspaces": {
-      "*": 6,
-    },
+      "*": 6
+    }
 },
 
   "custom/expand": {
     "format": "",
-    "tooltip": false,
+    "tooltip": false
   },
 
   "group/expand": {
@@ -90,17 +107,17 @@
     "drawer": {
       "transition-duration": 600,
       "transition-to-left": true,
-      "click-to-reveal": true,
+      "click-to-reveal": true
     },
-    "modules": ["custom/expand", "tray"],
+    "modules": ["custom/expand", "tray"]
   },
 
   "tray": {
     "icon-size": 12,
-    "spacing": 12,
+    "spacing": 12
   },
 
-"pulseaudio": {
+  "pulseaudio": {
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% ",
     "format-muted": "",
@@ -128,17 +145,16 @@
     "format-disconnected": "󰤮",
     "interval": 3,
     "spacing": 1,
-    "tooltip": false,
+    "tooltip": false
   },
 
-"bluetooth": {
-	"format": " {status}",
-	"format-connected": " {device_alias}",
-	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
-	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-	"on-click": "blueman-manager"
-}}
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueman-manager"
+  }   
+}

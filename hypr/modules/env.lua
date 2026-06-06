@@ -27,3 +27,6 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 -- Nvidia
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+
+-- Hyprshot
+hl.env("HYPRSHOT_DIR", "/home/andrey/Pictures/Screenshots/")

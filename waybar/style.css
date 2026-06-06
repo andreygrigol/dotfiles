@@ -11,7 +11,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font Propo;
   font-size: 14px;
 }
 
@@ -67,22 +67,30 @@
   margin: 0 22 0 15px;
 }
 
-#mpris {
+#media {
   margin: 0 0 0 5px;
   padding: 0 9px;
-  background-color: @background;
-  color: @text;
+  color: @background;
 }
 
-#mpris.playing {
-  background-color: @color1;
-  border-radius: 3px;
-  color: @background;
+#custom-media-animation {
+    margin-right: 10px;
+}
+
+#custom-media-now-playing {
+    margin-right: 10px;
+    color: @color1;
+}
+
+#custom-media-time {
+    opacity: 0.5;
+    font-size: 10px;
 }
 
 #custom-arch {
   margin: 0 15;
-  font-size: 20px;
+  font-size: 23px;
+  color: #458588;
 }
 
 #bluetooth {
