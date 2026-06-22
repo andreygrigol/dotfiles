@@ -10,8 +10,8 @@ return {
         "lua_ls",
         "pyright",
         "eslint",
-	"clangd",
-	"rust_analyzer",
+        "clangd",
+        "rust_analyzer",
       },
     },
     dependencies = {
@@ -40,6 +40,7 @@ return {
         "black", -- python formatter
         "pylint",
         "eslint_d",
+        "gdtoolkit",
       },
     },
     dependencies = {

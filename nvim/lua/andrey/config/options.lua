@@ -5,6 +5,8 @@ opt.cursorline = true
 opt.relativenumber = true
 opt.shiftwidth = 4
 
+opt.colorcolumn = "80"
+
 opt.undofile = true
 opt.undodir = vim.fn.stdpath("data") .. "/undo"
 opt.undolevels = 10000
@@ -12,12 +14,17 @@ opt.undoreload = 10000
 opt.hlsearch = true
 opt.clipboard = "unnamedplus"
 
+opt.termguicolors = true
+
 -- Persistent Undo (Allows undoing changes even after closing the file)
 opt.undofile = true
 opt.undodir = vim.fn.stdpath("data") .. "/undo"
 
 -- Shada (Shared Data) - Preserves command, search, and register history
 opt.shada = "'100,<50,s10,h"
+
+-- Indent blankline
+vim.opt.list = true
 
 vim.api.nvim_create_autocmd("BufReadPost", {
   desc = "Open file at the last position it was edited",

@@ -25,6 +25,7 @@ return {
 		"lua",
 		"c",
 		"cpp",
+		"gdscript",
 	    },
 	    incremental_selection = {
 		enable = true,

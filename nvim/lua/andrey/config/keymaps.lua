@@ -48,11 +48,15 @@ keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", opts)
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", opts)
 
 -- Toggleterm
-vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>", opts)
+keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>", opts)
 
 -- Indentation
-vim.keymap.set("v", ">", ">gv")
-vim.keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+keymap.set("v", "<", "<gv")
 
 -- Clean text
-vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
+keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
+
+-- Split window
+keymap.set("n", "<leader>|", "<cmd>vsplit<CR>", opts)
+keymap.set("n", "<leader>-", "<cmd>hsplit<CR>", opts)
