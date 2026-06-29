@@ -9,8 +9,7 @@
 --
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar & hyprpaper")
-	hl.exec_cmd("hyprshade on vibrance")
-	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic-Gruvbox 18")
+	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 18")
 	hl.exec_cmd("nvibrant 512 512 1023")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 end)

@@ -35,4 +35,10 @@ hl.layer_rule({ match = { namespace = "gtk-layer-shell" }, blur = true })
 
 hl.window_rule({ match = { title = "Picture-in-Picture" }, float = true, size = { 640, 360 } })
 
+hl.window_rule({ match = { title = "Calendar" }, float = true, size = { 1280, 720 } })
+
 hl.window_rule({ match = { class = "chrome-calendar.google.com__-Default" }, float = true, size = { 1280, 720 } })
+
+hl.window_rule({ match = { title = "Typer Game" }, float = true })
+
+hl.window_rule({ match = { class = "com.chatterino.chatterino" }, float = true })

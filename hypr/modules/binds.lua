@@ -6,7 +6,7 @@
 local terminal = "kitty"
 local fileManager = "nautilus"
 local menu = "fuzzel"
-local agenda = "chromium --app=https://calendar.google.com"
+local agenda = "gnome-calendar"
 
 ---------------------
 ---- KEYBINDINGS ----

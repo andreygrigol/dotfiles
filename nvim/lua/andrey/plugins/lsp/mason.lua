@@ -12,6 +12,7 @@ return {
         "eslint",
         "clangd",
         "rust_analyzer",
+	"lua_lsp",
       },
     },
     dependencies = {
