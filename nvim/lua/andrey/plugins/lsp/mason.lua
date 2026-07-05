@@ -7,12 +7,10 @@ return {
         "ts_ls",
         "html",
         "cssls",
-        "lua_ls",
         "pyright",
         "eslint",
         "clangd",
         "rust_analyzer",
-	"lua_lsp",
       },
     },
     dependencies = {

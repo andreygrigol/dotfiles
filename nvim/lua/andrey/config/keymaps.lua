@@ -60,3 +60,4 @@ keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 -- Split window
 keymap.set("n", "<leader>|", "<cmd>vsplit<CR>", opts)
 keymap.set("n", "<leader>-", "<cmd>hsplit<CR>", opts)
+
