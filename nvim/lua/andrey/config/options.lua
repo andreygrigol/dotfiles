@@ -5,7 +5,7 @@ opt.cursorline = true
 opt.relativenumber = true
 opt.shiftwidth = 4
 
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 
 opt.undofile = true
 opt.undodir = vim.fn.stdpath("data") .. "/undo"
