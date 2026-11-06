@@ -4,6 +4,11 @@ opt.number = true
 opt.cursorline = true
 opt.relativenumber = true
 opt.shiftwidth = 4
+opt.tabstop = 4
+opt.autoindent = true
+opt.smartindent = true
+opt.expandtab = true
+opt.termguicolors = true
 
 opt.colorcolumn = "100"
 
@@ -14,7 +19,6 @@ opt.undoreload = 10000
 opt.hlsearch = true
 opt.clipboard = "unnamedplus"
 
-opt.termguicolors = true
 
 -- Persistent Undo (Allows undoing changes even after closing the file)
 opt.undofile = true
